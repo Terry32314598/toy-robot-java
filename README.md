@@ -26,7 +26,7 @@ Run the following scripts in sequence. Only need to run build.sh once if there i
 ```
 
 ---
-###Assumption
+### Assumption
 * Commands are put in a file.
 * Each command is seperated by a line breaker and don't accept redundant space.
 * Invalid command will be ignored and the game will continue until the last command in the input file processed
