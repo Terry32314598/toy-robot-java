@@ -27,6 +27,16 @@ public class PlaceCommandDetector {
        return matchResult.find();
     }
 
+    /**
+     * extract the coordinates from a PLACE command
+     *
+     * @param command
+     *        Stirng of a PLACE command.
+     *
+     * @return an int array containing two elements : [x,y]
+     *
+     * @throws  CommandParseFailureException if regex doesn't find any match result
+     * */
     public int[] parsePlacePosition(String command){
         Matcher matchResult =  coordinatePattern.matcher(command);
         if(matchResult.find()){
@@ -38,6 +48,14 @@ public class PlaceCommandDetector {
         }
     }
 
+    /**
+     * extract the aspect from a PLACE command
+     *
+     * @param command
+     *        Stirng of a PLACE command.
+     *
+     * @throws  CommandParseFailureException if regex doesn't find any match result
+     * */
     public String parsePlaceDirection(String command){
         Matcher matchResult =  directionPattern.matcher(command);
         if(matchResult.find()){

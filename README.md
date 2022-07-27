@@ -33,6 +33,5 @@ Run the following scripts in sequence. Only need to run build.sh once if there i
 
 ---
 ### Explanation
-PLACE command is not defined in Command.java. Because I define the PLACE as a special command which is a  bit high level
-for a robot to understand. So It becomes a system command. It is table's responsibility to initialize a robot and place
+PLACE command is not defined in Command.java. Because I define the PLACE as a special command which is for the table instead of robot. So It becomes a system command. It is table's responsibility to initialize a robot and place
 it somewhere for starting the game.
